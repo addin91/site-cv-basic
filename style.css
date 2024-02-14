@@ -1,0 +1,180 @@
+/* HEADER */
+header{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(37, 37, 37);
+    color: white;
+    position: sticky;
+}
+
+h1{
+    flex: 1;
+    text-align: center;
+}
+
+nav{
+    flex: 4;
+    display: flex;
+}
+
+ul{
+    display: flex;
+    flex: 1;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style-type: none;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+/* MAIN */
+
+section{
+    padding: 2% 5% 4%;
+}
+
+section > *{
+    padding: 2% 0%;
+}
+
+
+/* Section 1 */
+
+
+section:nth-child(odd){
+    background-color: darkgray;
+}
+
+.cv-content-moi{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.cv-content-moi > *{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img{
+  height: 400px;
+  width: 400px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  border-radius: 100%;
+}
+
+.cv-container-text > p{
+    text-align: justify;
+    line-height: 1.45em;
+    font-size: 1.2em;
+}
+
+
+/* Section 2 */
+
+
+.bar-fleche{
+  width: 10px;
+  height: 1000px;
+  background-color: black;
+}
+
+.bar-fleche *{
+    display: inline-block;
+    position: relative;
+}
+
+.rond{
+    height: 40px;
+    width: 40px;
+    background-color: black;
+    border-radius: 100%;
+    left: -15px;
+}
+
+.bar-fleche p{
+    left: 150px;
+    width: 500px;
+    text-align: justify;
+}
+
+.rond:nth-child(1){
+    top: 2%;
+}
+
+.rond:nth-child(3){
+    top: 3%;
+}
+
+.rond:nth-child(5){
+    top: 3%;
+}
+
+.rond:nth-child(7){
+    top: 3%;
+}
+
+.bar-fleche p:nth-child(2){
+    top: 1%;
+}
+
+.bar-fleche p:nth-child(4){
+    top: 1%;
+}
+
+.bar-fleche p:nth-child(6){
+    top: 1%;
+}
+
+.bar-fleche p:nth-child(8){
+    top: 1%;
+}
+
+.triangle-fleche{
+    height: 0px;
+    width: 0px;
+    border-top : 40px solid black;
+    border-right : 23px solid transparent;
+    border-left : 23px solid transparent;
+    left: -163%;
+    top: 1%;
+}
+/* FOOTER */
+
+
+
+.icone img{
+    height: 50px;
+    width: 50px;
+    transition: transform 0.6s ease-in-out;
+}
+
+.icone img:hover{
+    transform: rotate(1turn);
+}
+
+footer{
+    display: flex;
+    min-height: 200px;
+}
+
+footer > *{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cv-container-icone{
+    justify-content: space-evenly;
+}
