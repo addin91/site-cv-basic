@@ -47,7 +47,7 @@ section > *{
 /* Section 1 */
 
 
-section:nth-child(odd){
+section:nth-child(2n){
     background-color: darkgray;
 }
 
